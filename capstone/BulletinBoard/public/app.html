@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebTouch Whiteboard</title>
+
+  <!-- Core SDK Styles (QR, Cursor, Variables) -->
+  <link rel="stylesheet" href="/node_modules/webtouch-sdk/public-css/webtouch.css">
+  <!-- App Specific Layout -->
+  <link rel="stylesheet" href="/css/whiteboard.css">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "webtouch-sdk": "/node_modules/webtouch-sdk/client.js"
+    }
+  }
+  </script>
+
+</head>
+<body>
+  <div id="qrCodeContainer"><p>Loading...</p></div>
+  <div id="cursor"></div>
+  <div id="app-root"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script type="module" src="/js/appMain.js"></script>
+</body>
+</html>

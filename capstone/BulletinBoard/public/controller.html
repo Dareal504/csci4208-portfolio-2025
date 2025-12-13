@@ -1,0 +1,30 @@
+<!-- whiteboard/public/controller.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WebTouch Whiteboard Controller</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no"
+  />
+
+  <!-- Main controller layout (touchpad + keyboard + join form) -->
+  <link rel="stylesheet" href="/node_modules/webtouch-sdk/public-css/webtouchController.css">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "webtouch-sdk": "/node_modules/webtouch-sdk/client.js"
+    }
+  }
+  </script>
+
+</head>
+<body>
+  <div id="controller-app"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="module" src="/js/controllerMain.js"></script>
+</body>
+</html>

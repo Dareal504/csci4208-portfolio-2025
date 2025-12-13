@@ -1,0 +1,17 @@
+{
+  "name": "webtouch-example-multiuser-whiteboard",
+  "version": "0.1.0",
+  "description": "Example WebTouch whiteboard app using webtouch-sdk.",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "socket.io": "^4.0.0",
+    "webtouch-sdk": "file:../../webtouch-sdk"
+  }
+}
